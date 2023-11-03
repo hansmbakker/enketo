@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 // extracted from bootstrap dropdown.scss
 //
 //
@@ -21,7 +23,7 @@ $dropdown-link-disabled-color: $gray-light !default;
 
 @mixin nav-divider($color: #e5e5e5) {
     height: 1px;
-    margin: $line-height-computed / 2 - 1 0;
+    margin: math.div($line-height-computed, 2) - 1 0;
     overflow: hidden;
     background-color: $color;
 }
